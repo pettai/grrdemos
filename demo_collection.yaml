@@ -1,7 +1,7 @@
 name: SURPRISE_HANUKKAH
 doc: Quick fetch artifacts 
 sources:
-- type: ARTIFACT
+- type: ARTIFACT_GROUP
   attributes:
     names:
       - 'SURPRISE_HANUKKAH_windows'
@@ -12,11 +12,11 @@ supported_os: [Windows, Linux]
 name: SURPRISE_HANUKKAH_windows
 doc: Quick fetch artifacts 
 sources:
-- type: ARTIFACT
+- type: ARTIFACT_GROUP
   attributes:
     names:
-      - 'EventLogs'
-      - 'MFTFiles'
+      - 'WindowsEventLogs'
+      - 'NTFSMFTFiles'
       - 'WindowsRunKeys'
       - 'ChromeHistory'
       - 'System32_DLLs'
@@ -35,7 +35,7 @@ supported_os: [Windows]
 name: SURPRISE_HANUKKAH_linux
 doc: Quick fetch artifacts 
 sources:
-- type: ARTIFACT
+- type: ARTIFACT_GROUP
   attributes:
     names:
       - 'LinuxSystemBinaries'
